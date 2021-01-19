@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primaryColor: #29b2cf;
+  --secondaryColor: #a8e0ec;
+  --tertiaryColor: #ffffff;
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  width: 100%;
+}
+
+.primaryBackgroundColor {
+  background-color: var(--primaryColor);
+}
+
+.secondaryBackgroundColor {
+  background-color: var(--secondaryColor);
+}
+
+.tertiaryBackgroundColor {
+  background-color: var(--tertiaryColor);
+}
+
+.primaryTextColor {
+  color: var(--primaryTextColor);
+}
+
+.secondaryTextColor {
+  color: var(--secondaryTextColor);
+}
+
+.heading {
+  font-size: '2.5em';
+  padding-bottom: '1em';
+  font-weight: '300';
+  width: '100%';
+}
+
+.headerWrapper {
+  padding: 40px 0 30px;
+  text-align: center;
+}
+
+.top {
+  margin-top: 60px;
+}
+
+.wrapperElement {
+  padding: 3rem 1rem 3rem;
 }
