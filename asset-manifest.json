@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/xmas2020/static/css/main.d90693f2.chunk.css",
+    "main.js": "/xmas2020/static/js/main.69422d5a.chunk.js",
+    "main.js.map": "/xmas2020/static/js/main.69422d5a.chunk.js.map",
+    "runtime-main.js": "/xmas2020/static/js/runtime-main.e1178fc0.js",
+    "runtime-main.js.map": "/xmas2020/static/js/runtime-main.e1178fc0.js.map",
+    "static/js/2.8f9cfce2.chunk.js": "/xmas2020/static/js/2.8f9cfce2.chunk.js",
+    "static/js/2.8f9cfce2.chunk.js.map": "/xmas2020/static/js/2.8f9cfce2.chunk.js.map",
+    "static/js/3.093bdcfe.chunk.js": "/xmas2020/static/js/3.093bdcfe.chunk.js",
+    "static/js/3.093bdcfe.chunk.js.map": "/xmas2020/static/js/3.093bdcfe.chunk.js.map",
+    "index.html": "/xmas2020/index.html",
+    "static/css/main.d90693f2.chunk.css.map": "/xmas2020/static/css/main.d90693f2.chunk.css.map",
+    "static/js/2.8f9cfce2.chunk.js.LICENSE.txt": "/xmas2020/static/js/2.8f9cfce2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/xmas2020/static/media/background.4f1a8d27.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1178fc0.js",
+    "static/js/2.8f9cfce2.chunk.js",
+    "static/css/main.d90693f2.chunk.css",
+    "static/js/main.69422d5a.chunk.js"
+  ]
+}
