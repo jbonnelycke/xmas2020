@@ -6,7 +6,6 @@ import home from './components/pages/home/home';
 import cool from './components/pages/cool/cool';
 import anime from './components/pages/anime/anime';
 import onlyfans from './components/pages/onlyfans/onlyfans';
-import friends from './components/pages/friends/friends';
 
 function App() {
   return (
@@ -14,10 +13,9 @@ function App() {
       <div>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={home} />
+          <Route path="/home" exact component={home} />
           <Route path="/cool" component={cool} />
           <Route path="/anime" component={anime} />
-          <Route path="/friends" component={friends} />
           <Route path="/onlyfans" component={onlyfans} />
         </Switch>
       </div>

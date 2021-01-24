@@ -1,68 +1,51 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import './NavBar.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Box from '@material-ui/core/Box';
 
 const NavBar = () => {
   return (
-    <Navbar
-      className="primaryBackgroundColor navBar pl-5 pr-5 pt-0 pb-0"
-      expand="md"
-      fixed="top"
-    >
-      <Navbar.Brand
-        className="pl-md-5"
-        as={Link}
-        to="/"
-        style={{ color: 'var(--primaryTextColor)' }}
-      >
-        <img
-          src="./Logo.png"
-          width="auto"
-          height="100px"
-          className="d-inline-block align-top"
-          alt="Logo"
-        />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ml-auto pr-md-5">
-          <Nav.Item className="mx-auto">
-            <Nav.Link
-              as={NavLink}
-              to="/cool"
-              style={{ color: 'var(--primaryTextColor)', opacity: '0.5' }}
-              activeStyle={{ color: '#ffffff', opacity: '1' }}
-              eventKey="1"
-            >
-              katherine being cool
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-auto">
-            <Nav.Link
-              as={NavLink}
-              to="/anime"
-              style={{ color: 'var(--primaryTextColor)', opacity: '0.5' }}
-              activeStyle={{ color: '#ffffff', opacity: '1' }}
-              eventKey="2"
-            >
-              anime
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-auto">
-            <Nav.Link
-              as={NavLink}
-              to="/onlyfans"
-              style={{ color: 'var(--primaryTextColor)', opacity: '0.5' }}
-              activeStyle={{ color: '#ffffff', opacity: '1' }}
-              eventKey="3"
-            >
-              onlyfans
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <Box bgcolor="text.secondary" color="background.paper" height="5em" width="100%" p={2}>
+      <Row classname="md-3" style={{ justifyContent: 'center' }}>
+        <Col
+          xs={{ span: 6, order: 1 }}
+          md={{ span: 2, order: 2 }}
+          style={{ margin: 'auto', color: 'white', padding: '2em', textDecoration: 'none' }}
+          as={NavLink}
+          to="/"
+        >
+          <img src={process.env.PUBLIC_URL + '/Logo.png'} className="photo" alt="logo" />
+        </Col>
+        <Col
+          xs={{ span: 6, order: 1 }}
+          md={{ span: 2, order: 2 }}
+          style={{ margin: 'auto', color: 'white', padding: '2em', textDecoration: 'none' }}
+          as={NavLink}
+          to="/cool"
+        >
+          katherine bein cool
+        </Col>
+        <Col
+          xs={{ span: 12, order: 0 }}
+          md={{ span: 4, order: 3 }}
+          style={{ margin: 'auto', color: 'white', padding: '2em', textDecoration: 'none' }}
+          as={NavLink}
+          to="/anime"
+        >
+          anime debut >_>?
+        </Col>
+        <Col
+          xs={{ span: 6, order: 1 }}
+          md={{ span: 2, order: 4 }}
+          style={{ margin: 'auto', color: 'white', padding: '2em', textDecoration: 'none' }}
+          as={NavLink}
+          to="/onlyfans"
+        >
+          onlyfans
+        </Col>
+      </Row>
+    </Box>
   );
 };
 export default NavBar;
