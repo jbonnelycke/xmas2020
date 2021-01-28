@@ -13,7 +13,7 @@ const NavBar = () => {
           md={{ span: 2, order: 2 }}
           style={{ margin: 'auto', color: 'white', padding: '2em', textDecoration: 'none' }}
           as={NavLink}
-          to="/xmas2020"
+          to="/"
         >
           <img src={process.env.PUBLIC_URL + '/Logo.png'} className="photo" alt="logo" />
         </Col>

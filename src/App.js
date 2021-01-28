@@ -13,7 +13,7 @@ function App() {
       <div>
         <NavBar />
         <Switch>
-          <Route path="/xmas2020" exact component={home} />
+          <Route path="/" exact component={home} />
           <Route path="/cool" component={cool} />
           <Route path="/anime" component={anime} />
           <Route path="/onlyfans" component={onlyfans} />
